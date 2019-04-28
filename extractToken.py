@@ -24,8 +24,8 @@ for doc in docs:
 for lt in lists :
 
     push_service = FCMNotification(api_key="AAAAqZ7gPCs:APA91bE-UJ9LFH8N019ddYeicgwDSaugPgxQZpZHWGAEskT3RjeIVpKKu5w0p62PqL5GA3iNq2mZfJbl9hmUdCpZ-IZeDri3U1ZYeZ4MO6DsVRUtrwtdijmPdT6TcT10BxKXlJ8KbH1o")
-    message_title = "File Uploded"
-    message_body = "A new file has been upload. Do check it out."
+    message_title = "Something New, Something Spicy"
+    message_body = "A new chapter of wisdom awaits you."
     result = push_service.notify_single_device(registration_id=lt, message_body=message_body,
                                                message_title=message_title)
     print(lt)
